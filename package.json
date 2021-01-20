@@ -1,0 +1,67 @@
+{
+  "name": "virgilpress",
+  "version": "1.0.0",
+  "description": "virgilpress template",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack",
+    "start": "cross-env NODE_ENV=development concurrently -k \"webpack\" \"sleep 10 && node liveserver.js\"",
+    "createpage": "node createpage.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoniormrzz/virgilpress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antoniormrzz/virgilpress/issues"
+  },
+  "homepage": "https://github.com/antoniormrzz/virgilpress#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-typescript": "^7.12.7",
+    "@types/webpack-env": "^1.16.0",
+    "autoprefixer": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "concurrently": "^5.3.0",
+    "copy-webpack-plugin": "^7.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.0.1",
+    "ejs": "^3.1.5",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "live-server": "^1.2.1",
+    "mini-css-extract-plugin": "^1.3.3",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.2.1",
+    "postcss-loader": "^4.1.0",
+    "render-template-loader": "^1.2.3",
+    "rimraf": "^3.0.2",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "typescript": "^4.1.3",
+    "webpack": "^5.11.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-typescript"
+    ]
+  },
+  "browserslist": [
+    "defaults",
+    "not ie < 11",
+    "last 2 versions",
+    "> 1%",
+    "iOS 7",
+    "last 3 iOS versions"
+  ],
+  "dependencies": {
+    "tailwindcss": "^2.0.2"
+  }
+}
