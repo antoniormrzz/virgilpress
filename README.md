@@ -80,5 +80,5 @@ You have the full power of npm, you can use things like lottie animations and an
 I set up a github action for github pages for another project, but you could just as easily drag and drop your **built** dist folder to netlify. 
 You could also include Vue cdn in your project if that's your thing.
 
-Don't forget to change LICENSE, README, package.json and package-lock for your projects.
+Don't forget to change LICENSE, README, package.json for your projects.
 
