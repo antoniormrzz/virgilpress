@@ -16,9 +16,10 @@ A hassle-free, feature packed static site generator, without a frontend framewor
 - ⭐ Asset support
 
 # Usage
-1. Clone or Download this repo
-2. Do 'npm i' to install dependencies
-3. 'npm start'
+1. npx degit antoniormrzz/virgilpress my-app-name (or clone the repo or download zip)
+2. cd my-app-name
+2. npm install (to install dependencies)
+3. npm start
 4. Profit????
 
 ## Important Notes
@@ -26,7 +27,7 @@ A hassle-free, feature packed static site generator, without a frontend framewor
 
 - Each ts file for a page needs to import tailwindcss and it's own scss file. e.g. hello.ts needs to import hello.scss so that file-loader would pick it up.
 
-- tailwindcss intellisense and ejs support extensions are recommended for Visual Studio Code. 
+- tailwindcss intellisense and ejs support extensions are recommended (but not mandatory) for Visual Studio Code. 
 
 - VirgilPress is not flexible on the structure, read Structure section for more.
 
@@ -34,7 +35,7 @@ A hassle-free, feature packed static site generator, without a frontend framewor
 
 - You should access assets in ejs (e.g. img tag src) with a path starting from 'assets/'. Look at welcome.ejs for an example.
 
-- Tailwind is purging pages and views directories, if you are going to have ejs files somewhere else, make sure to configure tailwind.
+- Tailwind is purging extra css for pages and views directories, if you are going to have ejs files somewhere else, make sure to configure tailwind.
 
 
 # Structure
@@ -56,7 +57,7 @@ Assets go into **assets** folder. Please try to keep things tidy. Structure of a
 **Createpage.js and liveserver.js** are convinience scripts, you can modify them, but I would not recommend so.
 
 # Creating a new Page
-There is a script for generating new pages. do "npm run createpage -- pagename" to generate a new page.
+There is a script for generating new pages. do "npm run createpage -- my-page-name" to generate a new page.
 
 
 # Final notes
