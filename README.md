@@ -1,3 +1,4 @@
+![image](https://user-images.githubusercontent.com/45634189/107097038-1d4f2b00-681d-11eb-9e87-ea5ce52b63dc.png)
 # virgilpress
 A hassle-free, feature packed static site generator, without a frontend framework. Since ejs, scss and ts support writing plain html, css and js, these features are optional.
 
