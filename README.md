@@ -16,13 +16,29 @@ A hassle-free, feature packed static site generator, without a frontend framewor
 - ⭐ Asset support
 
 # Usage
-1. npx degit antoniormrzz/virgilpress my-app-name (or clone the repo or download zip)
-2. cd my-app-name
-2. npm install (to install dependencies)
-3. npm start
-4. Profit????
+1. `npx degit antoniormrzz/virgilpress my-app-name` (or clone the repo or download zip)
+2. `cd my-app-name`
+2. `npm install` (to install dependencies)
+3. `npm start`
+4. Profit????    
+<br/>
+
+## Creating a new Page
+There is a script for generating new pages. do:   
+- `npm run createpage -- my-page-name`
+
+where my-page-name is the page name.  
+<br/>
+## Build
+When you are ready to build:   
+- `npm run build`
+
+This gives you a dist folder, which you can then drag and drop to [Netlify](https://www.netlify.com/) for a free website!  
+<br/>
 
 ## Important Notes
+- If you don't want to remember most of these, use the page generator script.
+
 - since assets are always copied with copy plugin, in order to stop copying your url assets twice (basically anything you use with a url in scss/css, like fonts, images etc), use nc- prefix with asset file names. e.g. nc-item.jpg will not be copied to assets unless file-loader does it. The only time assets would be copied over twice, is when file-loader loads them (i.e. background css with url in your scss file).
 
 - Each ts file for a page needs to import tailwindcss and it's own scss file. e.g. hello.ts needs to import hello.scss so that file-loader would pick it up.
@@ -55,15 +71,14 @@ Assets go into **assets** folder. Please try to keep things tidy. Structure of a
 **views** will hold your ejs files, you can extract your footer, header, or any component you like into an ejs file and include them in your pages. There is an example with a value being passed.
 
 **Createpage.js and liveserver.js** are convinience scripts, you can modify them, but I would not recommend so.
-
-# Creating a new Page
-There is a script for generating new pages. do "npm run createpage -- my-page-name" to generate a new page.
+       
+<br/>
 
 
 # Final notes
 You have the full power of npm, you can use things like lottie animations and any other library you like without a cdn. You can install and use jquery too, but it is not provided out of the box.
 I set up a github action for github pages for another project, but you could just as easily drag and drop your **built** dist folder to netlify. 
-You could also include Vue in your project.
+You could also include Vue cdn in your project if that's your thing.
 
 Don't forget to change LICENSE, README, package.json and package-lock for your projects.
 
